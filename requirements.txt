@@ -73,3 +73,4 @@ uvicorn==0.29.0
 watchdog==4.0.0
 Werkzeug==3.0.2
 wheel==0.43.0
+dotenv
