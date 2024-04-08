@@ -4,9 +4,15 @@ import os
 from typing import List
 import tiktoken
 import json 
-import dotenv
+from dotenv import load_dotenv
 
 dotenv.load_dotenv()
+
+project_folder = os.path.dirname(__file__)
+
+load_dotenv(os.path.join(project_folder, '.env'))
+
+
 # Importing Azure-related libraries for authentication and search functionality
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
