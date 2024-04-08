@@ -4,9 +4,10 @@ import os
 from typing import List
 import tiktoken
 import json 
-from dotenv import load_dotenv
+from dotenv import load_dotenv  # Importing load_dotenv from dotenv module
 
-dotenv.load_dotenv()
+# Load environment variables from .env file
+load_dotenv()
 
 project_folder = os.path.dirname(__file__)
 
